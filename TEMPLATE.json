@@ -1,0 +1,48 @@
+{
+  "id": "clean-blog",
+  "title": "Clean Blog",
+  "category": "Personal Productivity",
+  "upstreamRepository": "StartBootstrap/startbootstrap-clean-blog",
+  "upstreamCommit": "1ebc4f8f3b6194335df237a2a7837955a5a4a9aa",
+  "upstreamUrl": "https://codeload.github.com/StartBootstrap/startbootstrap-clean-blog/zip/1ebc4f8f3b6194335df237a2a7837955a5a4a9aa",
+  "upstreamSha256": "ccf27cf6095db641cbb17bd76c1410c813ab70b173378d2dfd04743c0b30e629",
+  "upstreamBytes": 12019483,
+  "license": "MIT",
+  "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+  "upstreamUpdated": "2024-02-01T00:57:18Z",
+  "archived": false,
+  "upstreamScripts": {
+    "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+    "build:assets": "node scripts/build-assets.js",
+    "build:pug": "node scripts/build-pug.js",
+    "build:scripts": "node scripts/build-scripts.js",
+    "build:scss": "node scripts/build-scss.js",
+    "clean": "node scripts/clean.js",
+    "start": "npm run build && node scripts/start.js",
+    "start:debug": "npm run build && node scripts/start-debug.js"
+  },
+  "upstreamDependencies": {
+    "bootstrap": "5.2.3"
+  },
+  "summary": "A multi-page blog website with home, about, article and sample contact pages. Edit posts as HTML.",
+  "features": [
+    "Home, article and about pages",
+    "Responsive article typography",
+    "Static HTML posts; no CMS or email service"
+  ],
+  "reviewDate": "2026-10-14",
+  "adaptations": [
+    "Use upstream prebuilt HTML/CSS/JS as editable source; no build toolchain required",
+    "Replace all bundled images, logos and illustrations with original SVG sample artwork",
+    "Remove SB Forms runtime and API-token attributes; explicitly label sample forms and content",
+    "Add a dependency-free local server with a public-file allowlist"
+  ],
+  "replacedAssets": [
+    "assets/favicon.ico",
+    "assets/img/about-bg.jpg",
+    "assets/img/contact-bg.jpg",
+    "assets/img/home-bg.jpg",
+    "assets/img/post-bg.jpg",
+    "assets/img/post-sample-image.jpg"
+  ]
+}
